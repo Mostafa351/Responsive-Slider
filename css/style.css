@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(53, 52, 52);
+    font-family: "Verdana", Tahoma, sans-serif
+}
+
+.item,
+.img-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.item-caption {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    bottom: 30px;
+    text-align: center;
+    background-color: rgb(235, 233, 233);
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:600px) {
+    .item-caption {
+        display: none;
+        font-size: 12px;
+    }
+}
+
+.light-box {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-item {
+    height: 500px;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#box {
+    position: relative;
+}
+
+#box i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
